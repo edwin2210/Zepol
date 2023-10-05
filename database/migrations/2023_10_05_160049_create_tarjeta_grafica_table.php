@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('tarjeta_grafica', function (Blueprint $table) {
             $table->id();
             $table->String('marca');
+            $table->integer('almacenamiento');
         });
     }
 
