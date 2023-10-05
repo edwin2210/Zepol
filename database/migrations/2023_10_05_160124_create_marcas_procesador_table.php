@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('marcas_procesador', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->String('marca');
         });
     }
 

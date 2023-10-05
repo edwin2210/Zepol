@@ -13,7 +13,9 @@ return new class extends Migration
     {
         Schema::create('procesador', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->integer('generacion');
+            $table->integer('id_marca');
+            $table->string('modelo');
         });
     }
 

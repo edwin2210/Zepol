@@ -13,7 +13,9 @@ return new class extends Migration
     {
         Schema::create('ventas', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->integer('id_vendedor');
+            $table->timestamp('fecha');
+            $table->double('total');
         });
     }
 

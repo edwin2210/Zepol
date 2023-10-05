@@ -13,7 +13,23 @@ return new class extends Migration
     {
         Schema::create('producto', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->integer('id_tipo');
+            $table->string('modelo');
+            $table->integer('id_marca');
+            $table->integer('memoria_ram');
+            $table->enum('tipo_almacenamiento', ['SSD', 'HDD','DUAL']);
+            $table->integer('capacidad');
+            $table->integer('id_procesador');
+            $table->float('diagonal_pantalla');
+            $table->boolean('touch');
+            $table->integer('id_tarjeta');
+            $table->integer('id_teclado');
+            $table->enum('resoluccion', ['HD', 'FULLHD','4K','2K']);
+            $table->enum('so', ['WIN10', 'WIN11','OTRO']);
+            $table->integer('cantidad');
+            $table->float('precio');
+
+            
         });
     }
 
