@@ -38,6 +38,11 @@ const showingNavigationDropdown = ref(false);
                                     Home
                                 </NavLink>
                             </div>
+                            <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                                <NavLink :href="route('home.create')" :active="route().current('home.create')">
+                                    Form
+                                </NavLink>
+                            </div>
                         </div>
 
                         <div class="hidden sm:flex sm:items-center sm:ml-6">
